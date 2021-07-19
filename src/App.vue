@@ -1,28 +1,65 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="app-nav">
+    <Navbar />
+    </div>
+    <div class="side-and-home">
+      <div class="app-side">
+    <SideMenu />
+      </div>
+      <div class="app-home">
+    <router-view />    
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Navbar from './components/Navbar.vue'
+import SideMenu from './components/SideMenu.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Navbar,
+    SideMenu
   }
 }
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  width: 100%;
+}
+div.app-nav {
+  position: sticky;
+  top: 0;
+}
+div.side-and-home {
+  display: flex;
+  width: 100%;
+  height: 86vh;
+}
+div.app-side {
+  flex: 22;
+  width: max-content;
+  position: sticky;
+  left: 0;
+  top: 13vh;
+}
+div.app-home {
+  flex: 88;
+  height: 84vh;
+  overflow: scroll;
 }
 </style>
