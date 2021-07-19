@@ -29,37 +29,5 @@ export default {
 </script>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-}
-#app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: flex;
-  flex-direction: column;
-  height: max-content;
-  width: 100%;
-}
-div.app-nav {
-  position: sticky;
-  top: 0;
-}
-div.side-and-home {
-  display: flex;
-  width: 100%;
-  height: 86vh;
-}
-div.app-side {
-  flex: 22;
-  width: max-content;
-  position: sticky;
-  left: 0;
-  top: 13vh;
-}
-div.app-home {
-  flex: 88;
-  height: 84vh;
-  overflow: scroll;
-}
+@import url('./assets/App.css');
 </style>

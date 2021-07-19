@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+div.Home {
+    background: linear-gradient(to bottom, rgb(0,0,0,0.4), rgb(0,0,0,0.2)), url(../homebg.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.Home div#welcome {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+div.Home div#welcome span {
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 2rem 0;
+}
+div.Home div#welcome button {
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    outline: none;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.home-button-link {
+    color: #000;
+    text-decoration: none;
+}
+div.Home div#welcome button:hover .home-button-link{
+    color: #fff;
+}
+div.Home div#welcome button:hover {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
